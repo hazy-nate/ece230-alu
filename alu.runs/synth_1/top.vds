@@ -1,0 +1,340 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Nov  5 09:36:49 2024
+# Process ID: 3759
+# Current directory: /home/nate/alu/alu/alu.runs/synth_1
+# Command line: vivado -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: /home/nate/alu/alu/alu.runs/synth_1/top.vds
+# Journal file: /home/nate/alu/alu/alu.runs/synth_1/vivado.jou
+# Running On        :nartix
+# Platform          :unknown
+# Operating System  :unknown
+# Processor Detail  :Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz
+# CPU Frequency     :3099.993 MHz
+# CPU Physical cores:2
+# CPU Logical cores :4
+# Host memory       :16581 MB
+# Swap memory       :17179 MB
+# Total Virtual     :33761 MB
+# Available Virtual :26779 MB
+#-----------------------------------------------------------
+source top.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1410.570 ; gain = 0.023 ; free physical = 3511 ; free virtual = 25180
+Command: read_checkpoint -auto_incremental -incremental /home/nate/alu/alu/alu.srcs/utils_1/imports/synth_1/top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/nate/alu/alu/alu.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Device 21-9227] Part: xc7a35tcpg236-1 does not have CEAM library.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3817
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2128.355 ; gain = 413.715 ; free physical = 2447 ; free virtual = 24120
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [/home/nate/alu/alu/alu.srcs/sources_1/new/top.v:9]
+INFO: [Synth 8-6157] synthesizing module 'n_bit_memory' [/home/nate/alu/alu/alu.srcs/sources_1/new/n_bit_memory.v:6]
+	Parameter BIT_COUNT bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'n_bit_memory' (0#1) [/home/nate/alu/alu/alu.srcs/sources_1/new/n_bit_memory.v:6]
+INFO: [Synth 8-6157] synthesizing module 'n_bit_ripple_carry_adder' [/home/nate/alu/alu/alu.srcs/sources_1/new/n_bit_ripple_carry_adder.v:9]
+	Parameter BIT_COUNT bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'full_adder' [/home/nate/alu/alu/alu.srcs/sources_1/new/full_adder.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'full_adder' (0#1) [/home/nate/alu/alu/alu.srcs/sources_1/new/full_adder.v:8]
+WARNING: [Synth 8-324] index 7 out of range [/home/nate/alu/alu/alu.srcs/sources_1/new/n_bit_ripple_carry_adder.v:34]
+WARNING: [Synth 8-324] index 7 out of range [/home/nate/alu/alu/alu.srcs/sources_1/new/n_bit_ripple_carry_adder.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'n_bit_ripple_carry_adder' (0#1) [/home/nate/alu/alu/alu.srcs/sources_1/new/n_bit_ripple_carry_adder.v:9]
+WARNING: [Synth 8-7071] port 'carry' of module 'n_bit_ripple_carry_adder' is unconnected for instance 'adder' [/home/nate/alu/alu/alu.srcs/sources_1/new/top.v:101]
+WARNING: [Synth 8-7023] instance 'adder' of module 'n_bit_ripple_carry_adder' has 4 connections declared, but only 3 given [/home/nate/alu/alu/alu.srcs/sources_1/new/top.v:101]
+INFO: [Synth 8-6157] synthesizing module 'n_bit_ripple_borrow_subtractor' [/home/nate/alu/alu/alu.srcs/sources_1/new/n_bit_ripple_borrow_subtractor.v:8]
+	Parameter BIT_COUNT bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'full_subtractor' [/home/nate/alu/alu/alu.srcs/sources_1/new/full_subtractor.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'full_subtractor' (0#1) [/home/nate/alu/alu/alu.srcs/sources_1/new/full_subtractor.v:8]
+WARNING: [Synth 8-324] index 7 out of range [/home/nate/alu/alu/alu.srcs/sources_1/new/n_bit_ripple_borrow_subtractor.v:33]
+WARNING: [Synth 8-324] index 7 out of range [/home/nate/alu/alu/alu.srcs/sources_1/new/n_bit_ripple_borrow_subtractor.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'n_bit_ripple_borrow_subtractor' (0#1) [/home/nate/alu/alu/alu.srcs/sources_1/new/n_bit_ripple_borrow_subtractor.v:8]
+WARNING: [Synth 8-7071] port 'borrow' of module 'n_bit_ripple_borrow_subtractor' is unconnected for instance 'subtractor' [/home/nate/alu/alu/alu.srcs/sources_1/new/top.v:110]
+WARNING: [Synth 8-7023] instance 'subtractor' of module 'n_bit_ripple_borrow_subtractor' has 4 connections declared, but only 3 given [/home/nate/alu/alu/alu.srcs/sources_1/new/top.v:110]
+INFO: [Synth 8-6157] synthesizing module 'twos_complement_converter' [/home/nate/alu/alu/alu.srcs/sources_1/new/twos_complement_converter.v:10]
+	Parameter BIT_COUNT bound to: 8 - type: integer 
+WARNING: [Synth 8-7071] port 'carry' of module 'n_bit_ripple_carry_adder' is unconnected for instance 'n_bit_ripple_carry_adder' [/home/nate/alu/alu/alu.srcs/sources_1/new/twos_complement_converter.v:21]
+WARNING: [Synth 8-7023] instance 'n_bit_ripple_carry_adder' of module 'n_bit_ripple_carry_adder' has 4 connections declared, but only 3 given [/home/nate/alu/alu/alu.srcs/sources_1/new/twos_complement_converter.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'twos_complement_converter' (0#1) [/home/nate/alu/alu/alu.srcs/sources_1/new/twos_complement_converter.v:10]
+INFO: [Synth 8-6157] synthesizing module 'operation_multiplexer' [/home/nate/alu/alu/alu.srcs/sources_1/new/operation_multiplexer.v:10]
+	Parameter BIT_COUNT bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'operation_multiplexer' (0#1) [/home/nate/alu/alu/alu.srcs/sources_1/new/operation_multiplexer.v:10]
+INFO: [Synth 8-6157] synthesizing module 'unit_multiplexer' [/home/nate/alu/alu/alu.srcs/sources_1/new/unit_multiplexer.v:9]
+	Parameter BIT_COUNT bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'unit_multiplexer' (0#1) [/home/nate/alu/alu/alu.srcs/sources_1/new/unit_multiplexer.v:9]
+INFO: [Synth 8-6157] synthesizing module 'seven_segment_controller' [/home/nate/alu/alu/alu.srcs/sources_1/new/seven_segment_controller.v:9]
+INFO: [Synth 8-6157] synthesizing module 'ttf_clock_divider' [/home/nate/alu/alu/alu.srcs/sources_1/new/tff_clock_divider.v:6]
+	Parameter BIT_COUNT bound to: 17 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 't_flip_flop' [/home/nate/alu/alu/alu.srcs/sources_1/new/t_flip_flop.v:6]
+INFO: [Synth 8-6155] done synthesizing module 't_flip_flop' (0#1) [/home/nate/alu/alu/alu.srcs/sources_1/new/t_flip_flop.v:6]
+WARNING: [Synth 8-7071] port 'not_q' of module 't_flip_flop' is unconnected for instance 't_flip_flop' [/home/nate/alu/alu/alu.srcs/sources_1/new/tff_clock_divider.v:27]
+WARNING: [Synth 8-7023] instance 't_flip_flop' of module 't_flip_flop' has 4 connections declared, but only 3 given [/home/nate/alu/alu/alu.srcs/sources_1/new/tff_clock_divider.v:27]
+WARNING: [Synth 8-7071] port 'not_q' of module 't_flip_flop' is unconnected for instance 't_flip_flop' [/home/nate/alu/alu/alu.srcs/sources_1/new/tff_clock_divider.v:33]
+WARNING: [Synth 8-7023] instance 't_flip_flop' of module 't_flip_flop' has 4 connections declared, but only 3 given [/home/nate/alu/alu/alu.srcs/sources_1/new/tff_clock_divider.v:33]
+WARNING: [Synth 8-7071] port 'not_q' of module 't_flip_flop' is unconnected for instance 't_flip_flop' [/home/nate/alu/alu/alu.srcs/sources_1/new/tff_clock_divider.v:33]
+WARNING: [Synth 8-7023] instance 't_flip_flop' of module 't_flip_flop' has 4 connections declared, but only 3 given [/home/nate/alu/alu/alu.srcs/sources_1/new/tff_clock_divider.v:33]
+WARNING: [Synth 8-7071] port 'not_q' of module 't_flip_flop' is unconnected for instance 't_flip_flop' [/home/nate/alu/alu/alu.srcs/sources_1/new/tff_clock_divider.v:33]
+WARNING: [Synth 8-7023] instance 't_flip_flop' of module 't_flip_flop' has 4 connections declared, but only 3 given [/home/nate/alu/alu/alu.srcs/sources_1/new/tff_clock_divider.v:33]
+WARNING: [Synth 8-7071] port 'not_q' of module 't_flip_flop' is unconnected for instance 't_flip_flop' [/home/nate/alu/alu/alu.srcs/sources_1/new/tff_clock_divider.v:33]
+WARNING: [Synth 8-7023] instance 't_flip_flop' of module 't_flip_flop' has 4 connections declared, but only 3 given [/home/nate/alu/alu/alu.srcs/sources_1/new/tff_clock_divider.v:33]
+WARNING: [Synth 8-7071] port 'not_q' of module 't_flip_flop' is unconnected for instance 't_flip_flop' [/home/nate/alu/alu/alu.srcs/sources_1/new/tff_clock_divider.v:33]
+WARNING: [Synth 8-7023] instance 't_flip_flop' of module 't_flip_flop' has 4 connections declared, but only 3 given [/home/nate/alu/alu/alu.srcs/sources_1/new/tff_clock_divider.v:33]
+WARNING: [Synth 8-7071] port 'not_q' of module 't_flip_flop' is unconnected for instance 't_flip_flop' [/home/nate/alu/alu/alu.srcs/sources_1/new/tff_clock_divider.v:33]
+WARNING: [Synth 8-7023] instance 't_flip_flop' of module 't_flip_flop' has 4 connections declared, but only 3 given [/home/nate/alu/alu/alu.srcs/sources_1/new/tff_clock_divider.v:33]
+WARNING: [Synth 8-7071] port 'not_q' of module 't_flip_flop' is unconnected for instance 't_flip_flop' [/home/nate/alu/alu/alu.srcs/sources_1/new/tff_clock_divider.v:33]
+WARNING: [Synth 8-7023] instance 't_flip_flop' of module 't_flip_flop' has 4 connections declared, but only 3 given [/home/nate/alu/alu/alu.srcs/sources_1/new/tff_clock_divider.v:33]
+WARNING: [Synth 8-7071] port 'not_q' of module 't_flip_flop' is unconnected for instance 't_flip_flop' [/home/nate/alu/alu/alu.srcs/sources_1/new/tff_clock_divider.v:33]
+WARNING: [Synth 8-7023] instance 't_flip_flop' of module 't_flip_flop' has 4 connections declared, but only 3 given [/home/nate/alu/alu/alu.srcs/sources_1/new/tff_clock_divider.v:33]
+WARNING: [Synth 8-7071] port 'not_q' of module 't_flip_flop' is unconnected for instance 't_flip_flop' [/home/nate/alu/alu/alu.srcs/sources_1/new/tff_clock_divider.v:33]
+WARNING: [Synth 8-7023] instance 't_flip_flop' of module 't_flip_flop' has 4 connections declared, but only 3 given [/home/nate/alu/alu/alu.srcs/sources_1/new/tff_clock_divider.v:33]
+WARNING: [Synth 8-7071] port 'not_q' of module 't_flip_flop' is unconnected for instance 't_flip_flop' [/home/nate/alu/alu/alu.srcs/sources_1/new/tff_clock_divider.v:33]
+WARNING: [Synth 8-7023] instance 't_flip_flop' of module 't_flip_flop' has 4 connections declared, but only 3 given [/home/nate/alu/alu/alu.srcs/sources_1/new/tff_clock_divider.v:33]
+WARNING: [Synth 8-7071] port 'not_q' of module 't_flip_flop' is unconnected for instance 't_flip_flop' [/home/nate/alu/alu/alu.srcs/sources_1/new/tff_clock_divider.v:33]
+WARNING: [Synth 8-7023] instance 't_flip_flop' of module 't_flip_flop' has 4 connections declared, but only 3 given [/home/nate/alu/alu/alu.srcs/sources_1/new/tff_clock_divider.v:33]
+WARNING: [Synth 8-7071] port 'not_q' of module 't_flip_flop' is unconnected for instance 't_flip_flop' [/home/nate/alu/alu/alu.srcs/sources_1/new/tff_clock_divider.v:33]
+WARNING: [Synth 8-7023] instance 't_flip_flop' of module 't_flip_flop' has 4 connections declared, but only 3 given [/home/nate/alu/alu/alu.srcs/sources_1/new/tff_clock_divider.v:33]
+WARNING: [Synth 8-7071] port 'not_q' of module 't_flip_flop' is unconnected for instance 't_flip_flop' [/home/nate/alu/alu/alu.srcs/sources_1/new/tff_clock_divider.v:33]
+WARNING: [Synth 8-7023] instance 't_flip_flop' of module 't_flip_flop' has 4 connections declared, but only 3 given [/home/nate/alu/alu/alu.srcs/sources_1/new/tff_clock_divider.v:33]
+WARNING: [Synth 8-7071] port 'not_q' of module 't_flip_flop' is unconnected for instance 't_flip_flop' [/home/nate/alu/alu/alu.srcs/sources_1/new/tff_clock_divider.v:33]
+WARNING: [Synth 8-7023] instance 't_flip_flop' of module 't_flip_flop' has 4 connections declared, but only 3 given [/home/nate/alu/alu/alu.srcs/sources_1/new/tff_clock_divider.v:33]
+WARNING: [Synth 8-7071] port 'not_q' of module 't_flip_flop' is unconnected for instance 't_flip_flop' [/home/nate/alu/alu/alu.srcs/sources_1/new/tff_clock_divider.v:33]
+WARNING: [Synth 8-7023] instance 't_flip_flop' of module 't_flip_flop' has 4 connections declared, but only 3 given [/home/nate/alu/alu/alu.srcs/sources_1/new/tff_clock_divider.v:33]
+WARNING: [Synth 8-7071] port 'not_q' of module 't_flip_flop' is unconnected for instance 't_flip_flop' [/home/nate/alu/alu/alu.srcs/sources_1/new/tff_clock_divider.v:33]
+WARNING: [Synth 8-7023] instance 't_flip_flop' of module 't_flip_flop' has 4 connections declared, but only 3 given [/home/nate/alu/alu/alu.srcs/sources_1/new/tff_clock_divider.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'ttf_clock_divider' (0#1) [/home/nate/alu/alu/alu.srcs/sources_1/new/tff_clock_divider.v:6]
+INFO: [Synth 8-6157] synthesizing module 'seven_segment_scanner' [/home/nate/alu/alu/alu.srcs/sources_1/new/seven_segment_scanner.v:6]
+INFO: [Synth 8-226] default block is never used [/home/nate/alu/alu/alu.srcs/sources_1/new/seven_segment_scanner.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'seven_segment_scanner' (0#1) [/home/nate/alu/alu/alu.srcs/sources_1/new/seven_segment_scanner.v:6]
+INFO: [Synth 8-6157] synthesizing module 'seven_segment_decoder' [/home/nate/alu/alu/alu.srcs/sources_1/new/seven_segment_decoder.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'seven_segment_decoder' (0#1) [/home/nate/alu/alu/alu.srcs/sources_1/new/seven_segment_decoder.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'seven_segment_controller' (0#1) [/home/nate/alu/alu/alu.srcs/sources_1/new/seven_segment_controller.v:9]
+WARNING: [Synth 8-7071] port 'right_center' of module 'seven_segment_controller' is unconnected for instance 'seven_segment_controller' [/home/nate/alu/alu/alu.srcs/sources_1/new/top.v:169]
+WARNING: [Synth 8-7023] instance 'seven_segment_controller' of module 'seven_segment_controller' has 8 connections declared, but only 7 given [/home/nate/alu/alu/alu.srcs/sources_1/new/top.v:169]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [/home/nate/alu/alu/alu.srcs/sources_1/new/top.v:9]
+WARNING: [Synth 8-7129] Port sw[7] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[6] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[5] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[4] in module top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2205.293 ; gain = 490.652 ; free physical = 2354 ; free virtual = 24029
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2220.137 ; gain = 505.496 ; free physical = 2346 ; free virtual = 24021
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2220.137 ; gain = 505.496 ; free physical = 2346 ; free virtual = 24021
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2220.137 ; gain = 0.000 ; free physical = 2346 ; free virtual = 24021
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/nate/alu/alu/alu.srcs/constrs_1/imports/alu/constraints.xdc]
+Finished Parsing XDC File [/home/nate/alu/alu/alu.srcs/constrs_1/imports/alu/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/nate/alu/alu/alu.srcs/constrs_1/imports/alu/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2367.887 ; gain = 0.000 ; free physical = 2301 ; free virtual = 23977
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2367.887 ; gain = 0.000 ; free physical = 2301 ; free virtual = 23977
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2367.887 ; gain = 653.246 ; free physical = 2301 ; free virtual = 23977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2367.887 ; gain = 653.246 ; free physical = 2301 ; free virtual = 23977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2367.887 ; gain = 653.246 ; free physical = 2301 ; free virtual = 23977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2367.887 ; gain = 653.246 ; free physical = 2299 ; free virtual = 23976
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 40    
+	   3 Input      1 Bit         XORs := 8     
++---Registers : 
+	                8 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 17    
++---Muxes : 
+	   4 Input    8 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 6     
+	   4 Input    4 Bit        Muxes := 1     
+	   5 Input    4 Bit        Muxes := 1     
+	  14 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port sw[7] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[6] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[5] in module top is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[4] in module top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2367.887 ; gain = 653.246 ; free physical = 2283 ; free virtual = 23966
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 2367.887 ; gain = 653.246 ; free physical = 2283 ; free virtual = 23966
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2367.887 ; gain = 653.246 ; free physical = 2283 ; free virtual = 23966
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 2367.887 ; gain = 653.246 ; free physical = 2283 ; free virtual = 23966
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 2367.887 ; gain = 653.246 ; free physical = 2283 ; free virtual = 23966
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 2367.887 ; gain = 653.246 ; free physical = 2283 ; free virtual = 23966
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 2367.887 ; gain = 653.246 ; free physical = 2283 ; free virtual = 23966
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 2367.887 ; gain = 653.246 ; free physical = 2283 ; free virtual = 23966
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 2367.887 ; gain = 653.246 ; free physical = 2283 ; free virtual = 23966
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 2367.887 ; gain = 653.246 ; free physical = 2283 ; free virtual = 23966
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     1|
+|3     |LUT1   |    18|
+|4     |LUT2   |    11|
+|5     |LUT3   |     3|
+|6     |LUT4   |    27|
+|7     |LUT5   |    28|
+|8     |LUT6   |    41|
+|9     |MUXF7  |     1|
+|10    |FDCE   |    43|
+|11    |IBUF   |    15|
+|12    |OBUF   |    27|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 2367.887 ; gain = 653.246 ; free physical = 2283 ; free virtual = 23966
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 2367.887 ; gain = 505.496 ; free physical = 2282 ; free virtual = 23965
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 2367.895 ; gain = 653.246 ; free physical = 2282 ; free virtual = 23965
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2367.895 ; gain = 0.000 ; free physical = 2282 ; free virtual = 23965
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2367.895 ; gain = 0.000 ; free physical = 2603 ; free virtual = 24286
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 666c38e0
+INFO: [Common 17-83] Releasing license: Synthesis
+51 Infos, 55 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:35 . Memory (MB): peak = 2367.895 ; gain = 957.324 ; free physical = 2603 ; free virtual = 24286
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1958.331; main = 1584.154; forked = 426.435
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3394.875; main = 2367.891; forked = 1026.984
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2391.898 ; gain = 0.000 ; free physical = 2603 ; free virtual = 24286
+INFO: [Common 17-1381] The checkpoint '/home/nate/alu/alu/alu.runs/synth_1/top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  5 09:37:37 2024...

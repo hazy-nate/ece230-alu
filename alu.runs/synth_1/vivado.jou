@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Nov  5 09:36:49 2024
+# Process ID: 3759
+# Current directory: /home/nate/alu/alu/alu.runs/synth_1
+# Command line: vivado -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: /home/nate/alu/alu/alu.runs/synth_1/top.vds
+# Journal file: /home/nate/alu/alu/alu.runs/synth_1/vivado.jou
+# Running On        :nartix
+# Platform          :unknown
+# Operating System  :unknown
+# Processor Detail  :Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz
+# CPU Frequency     :3099.993 MHz
+# CPU Physical cores:2
+# CPU Logical cores :4
+# Host memory       :16581 MB
+# Swap memory       :17179 MB
+# Total Virtual     :33761 MB
+# Available Virtual :26779 MB
+#-----------------------------------------------------------
+source top.tcl -notrace

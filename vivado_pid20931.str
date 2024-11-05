@@ -1,0 +1,263 @@
+/*
+
+AMD Vivado v2024.1 (64-bit) [Major: 2024, Minor: 1]
+SW Build: 5076996 on Wed May 22 18:36:09 MDT 2024
+IP Build: 5075265 on Wed May 22 21:45:21 MDT 2024
+IP Build: 5075265 on Wed May 22 21:45:21 MDT 2024
+
+Process ID (PID): 20931
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Tue Oct 29 05:41:04 MDT 2024
+Time zone: 	Mountain Standard Time (America/Boise)
+
+OS: Linux
+OS Version: 6.11.1-artix1-1
+OS Architecture: amd64
+Available processors (cores): 4
+
+Display: 0
+Screen size: 1920x1080
+Local screen bounds: x = 0, y = 0, width = 1920, height = 1080
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+OS font scaling: 100%
+Anti-Alias Enabled: true
+
+Java version: 	21.0.1 64-bit
+JavaFX version: 21.0.1
+Java home: 	/tools/vivado/Vivado/2024.1/tps/lnx64/jre21.0.1_12
+Java executable: 	/tools/vivado/Vivado/2024.1/tps/lnx64/jre21.0.1_12/bin/java
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.uiScale.enabled=false, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, -XX:+UseStringDeduplication, -XX:MaxGCPauseMillis=200, -XX:+ParallelRefProcEnabled, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, -XX:NewSize=80m, -XX:MaxNewSize=80m, -Xms512m, -Xmx4072m, -Xss10m, -Xrs]
+Java initial memory (-Xms): 	512 MB
+Java maximum memory (-Xmx):	 3 GB
+
+User name: 	nate
+User home directory: /home/nate
+User working directory: /home/nate/alu/alu
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/vivado/Vivado
+HDI_APPROOT: /tools/vivado/Vivado/2024.1
+RDI_DATADIR: /tools/vivado/Vivado/2024.1/data
+RDI_BINDIR: /tools/vivado/Vivado/2024.1/bin
+
+Vivado preferences file: /home/nate/.Xilinx/Vivado/2024.1/vivado.xml
+Vivado preferences directory: /home/nate/.Xilinx/Vivado/2024.1/
+Vivado layouts directory: /home/nate/.Xilinx/Vivado/2024.1/data/layouts
+PlanAhead jar file: 	/tools/vivado/Vivado/2024.1/lib/classes/planAhead.jar
+Vivado log file: 	/home/nate/alu/alu/vivado.log
+Vivado journal file: 	/home/nate/alu/alu/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-20931-nartix
+Non-Default Parameters:	[]
+
+Xilinx & AMD Environment Variables
+--------------------------------------------------------------------------------------------
+RDI_APPROOT: /tools/vivado/Vivado/2024.1
+RDI_BASEROOT: /tools/vivado/Vivado
+RDI_BINROOT: /tools/vivado/Vivado/2024.1/bin
+RDI_BUILD: yes
+RDI_DATADIR: /tools/vivado/Vivado/2024.1/data
+RDI_INSTALLROOT: /tools/vivado
+RDI_INSTALLVER: 2024.1
+RDI_JAVA_PLATFORM: 
+RDI_JAVA_VERSION: 21.0.1_12
+RDI_LIBDIR: /tools/vivado/Vivado/2024.1/lib/lnx64.o/Default:/tools/vivado/Vivado/2024.1/lib/lnx64.o
+RDI_OPT_EXT: .o
+RDI_PATCHROOT: 
+RDI_PLATFORM: lnx64
+RDI_PREPEND_PATH: /tools/vivado/Vivado/2024.1/ids_lite/ISE/bin/lin64
+RDI_PROG: /tools/vivado/Vivado/2024.1/bin/unwrapped/lnx64.o/vivado
+RDI_SESSION_INFO: /home/nate/alu/alu:nartix_1730202036_20891
+RDI_SHARED_DATA: /tools/vivado/SharedData/2024.1/data
+RDI_TPS_ROOT: /tools/vivado/Vivado/2024.1/tps/lnx64
+RDI_USE_JDK21: True
+SHELL: /bin/bash
+STARSHIP_SHELL: bash
+XILINX: /tools/vivado/Vivado/2024.1/ids_lite/ISE
+XILINX_DSP: /tools/vivado/Vivado/2024.1/ids_lite/ISE
+XILINX_HLS: /tools/vivado/Vitis_HLS/2024.1
+XILINX_PLANAHEAD: /tools/vivado/Vivado/2024.1
+XILINX_VIVADO: /tools/vivado/Vivado/2024.1
+XILINX_VIVADO_HLS: /tools/vivado/Vivado/2024.1
+
+
+GUI allocated memory:	512 MB
+GUI max memory:		4,072 MB
+Engine allocated memory: 1,413 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+selectButton(PAResourceEtoH.GettingStartedView_OPEN_PROJECT, "Open Project"); // t (PAResourceEtoH.GettingStartedView_OPEN_PROJECT)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,448 MB. GUI used memory: 71 MB. Current time: 10/29/24, 5:41:06 AM MDT
+setFileChooser("/home/nate/alu/alu/alu.xpr");
+// Opening Vivado Project: /home/nate/alu/alu/alu.xpr. Version: Vivado v2024.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project /home/nate/alu/alu/alu.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project /home/nate/alu/alu/alu.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/nwdev/Vivado/alu' since last save. 
+// Tcl Message: INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/nate/alu/alu/alu.gen/sources_1'. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 134 MB (+138058kb) [00:00:32]
+// [Engine Memory]: 1,694 MB (+1624861kb) [00:00:32]
+// [Engine Memory]: 1,824 MB (+47406kb) [00:00:33]
+// WARNING: HEventQueue.dispatchEvent() is taking  3060 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/vivado/Vivado/2024.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,850 MB. GUI used memory: 74 MB. Current time: 10/29/24, 5:41:26 AM MDT
+// Tcl Message: open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:15 . Memory (MB): peak = 7925.770 ; gain = 397.977 ; free physical = 3094 ; free virtual = 24729 
+// Project name: alu; location: /home/nate/alu/alu; part: xc7a35tcpg236-1
+// Elapsed time: 16 seconds
+dismissDialog("Open Project"); // bj (Open Project Progress)
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 2); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 2); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// Elapsed time: 13 seconds
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_PANEL_TABBED, PAResourceOtoP.ProjectSummaryUtilizationPanel_TABLE, "Table", 1); // e (PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_PANEL_TABBED)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_PANEL_TABBED, PAResourceOtoP.ProjectSummaryUtilizationPanel_GRAPH, "Graph", 0); // e (PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_PANEL_TABBED)
+// [GUI Memory]: 154 MB (+13451kb) [00:01:05]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 21, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel", "Synthesis is Out-of-date"); // a (RDIResource.BaseDialog_CANCEL)
+dismissDialog("Synthesis is Out-of-date"); // t (dialog1)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 21, false); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree)
+selectButton(RDIResource.BaseDialog_YES, "Yes", "Synthesis is Out-of-date"); // a (RDIResource.BaseDialog_YES)
+dismissDialog("Synthesis is Out-of-date"); // t (dialog2)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: INFO: [Project 1-1160] Copying file /home/nate/alu/alu/alu.runs/synth_1/top.dcp to /home/nate/alu/alu/alu.srcs/utils_1/imports/synth_1 and adding it to utils fileset 
+selectComboBox(PAResourceItoN.NumJobsChooser_NUMBER_OF_JOBS, "4", 3); // d (PAResourceItoN.NumJobsChooser_NUMBER_OF_JOBS)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Launch Runs"); // a (RDIResource.BaseDialog_OK)
+// 'cI' command handler elapsed time: 8 seconds
+dismissDialog("Launch Runs"); // cL (dialog3)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 4 
+// Tcl Message: [Tue Oct 29 05:42:11 2024] Launched synth_1... Run output will be captured here: /home/nate/alu/alu/alu.runs/synth_1/runme.log [Tue Oct 29 05:42:11 2024] Launched impl_1... Run output will be captured here: /home/nate/alu/alu/alu.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bj (Generate Bitstream Progress)
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 20 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 3); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// PAPropertyPanels.initPanels (top.v) elapsed time: 0.3s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 3, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 3, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+// Launch External Editor: 'nvim /home/nate/alu/alu/alu.srcs/sources_1/new/top.v'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 3, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), twos_complement_converter : twos_complement_converter (twos_complement_converter.v)]", 4, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 1,903 MB. GUI used memory: 78 MB. Current time: 10/29/24, 5:42:41 AM MDT
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 3, true, false, false, false, true, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Popup Trigger - Node
+selectMenuItem(PAResourceQtoS.SrcMenu_OPEN_SELECTED_SOURCE_FILES, "Open File"); // ap (PAResourceQtoS.SrcMenu_OPEN_SELECTED_SOURCE_FILES)
+// Launch External Editor: 'nvim /home/nate/alu/alu/alu.srcs/sources_1/new/top.v'
+selectLabel((HResource) null, "Dashboard"); // b (Dashboard)
+selectTab(PAResourceOtoP.ProjectDashboardView_TABBED_PANE, PAResourceOtoP.ProjectDashboardView_OVERVIEW, "Overview", 0); // v (PAResourceOtoP.ProjectDashboardView_TABBED_PANE)
+selectLabel((HResource) null, "Dashboard"); // b (Dashboard)
+selectTab(PAResourceOtoP.ProjectDashboardView_TABBED_PANE, PAResourceOtoP.ProjectDashboardView_OVERVIEW, "Overview", 0); // v (PAResourceOtoP.ProjectDashboardView_TABBED_PANE)
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 3, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 3, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, definitions.vh]", 2, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 2, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 2, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 2, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), twos_complement_converter : twos_complement_converter (twos_complement_converter.v)]", 3, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), twos_complement_converter : twos_complement_converter (twos_complement_converter.v)]", 3, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+// Launch External Editor: 'nvim /home/nate/alu/alu/alu.srcs/sources_1/new/twos_complement_converter.v'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 2, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // g (PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, Flow Navigator Tree) - Node
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ah (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // am (RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, Custom Commands)
+selectMenuItem(RDIResourceCommand.RDICommands_SETTINGS, "Settings..."); // ap (RDIResourceCommand.RDICommands_SETTINGS, settings_menu)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ah (PAResourceItoN.MainMenuMgr_TOOLS, Tools)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl (Dont Echo) Command: 'rdi::info_commands {device::*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {debug::*}'
+// Tcl (Dont Echo) Command: 'rdi::info_commands {*}'
+// WARNING: HEventQueue.dispatchEvent() is taking  2457 ms.
+expandTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Text Editor]", 6); // s (PAResourceQtoS.SettingsDialog_OPTIONS_TREE, Options Tree)
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Text Editor]", 6, true); // s (PAResourceQtoS.SettingsDialog_OPTIONS_TREE, Options Tree) - Node
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// [GUI Memory]: 166 MB (+5442kb) [00:02:34]
+selectComboBox("Editors", "VIVADO", 0); // e (Editors)
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Colors]", 17, true); // s (PAResourceQtoS.SettingsDialog_OPTIONS_TREE, Options Tree) - Node
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Text Editor]", 6, true); // s (PAResourceQtoS.SettingsDialog_OPTIONS_TREE, Options Tree) - Node
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Text Editor, Tabs]", 9, false); // s (PAResourceQtoS.SettingsDialog_OPTIONS_TREE, Options Tree)
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Text Editor, Tabs]", 9, false); // s (PAResourceQtoS.SettingsDialog_OPTIONS_TREE, Options Tree)
+selectTree(PAResourceQtoS.SettingsDialog_OPTIONS_TREE, "[optionsRoot, Text Editor, Fonts and Colors]", 10, false); // s (PAResourceQtoS.SettingsDialog_OPTIONS_TREE, Options Tree)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,040 MB. GUI used memory: 128 MB. Current time: 10/29/24, 5:43:46 AM MDT
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 15 seconds
+selectButton(RDIResource.BaseDialog_APPLY, "Apply", "Settings"); // a (RDIResource.BaseDialog_APPLY)
+// [Engine Memory]: 2,061 MB (+152594kb) [00:03:03]
+// [GUI Memory]: 185 MB (+10793kb) [00:03:04]
+selectButton(RDIResource.BaseDialog_OK, "OK", "Settings"); // a (RDIResource.BaseDialog_OK)
+dismissDialog("Settings"); // d (dialog4)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 2, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 2, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 2,102 MB. GUI used memory: 118 MB. Current time: 10/29/24, 5:44:01 AM MDT
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 13 seconds
+selectCodeEditor("top.v", 121, 142); // ac (top.v)
+// [GUI Memory]: 195 MB (+269kb) [00:03:39]
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 53 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK", "Bitstream Generation Completed"); // a (RDIResource.BaseDialog_OK)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,234 MB. GUI used memory: 119 MB. Current time: 10/29/24, 5:45:06 AM MDT
